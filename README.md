@@ -5,4 +5,4 @@ Updated on April 6th,2021.
 
 If you have any question, please contact fjq19@mails.tsinghua.edu.cn.
 
-Files in 'GUI_tkinter/data/' can be downloaded from this OneDrive link: 
+Files in 'GUI_tkinter/data/' can be downloaded from this OneDrive link: https://1drv.ms/u/s!AvnYgnfmD_ORg0wqAB66rJHGK_-L?e=dGLFCW
