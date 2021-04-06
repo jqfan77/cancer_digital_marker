@@ -6,3 +6,5 @@ Updated on April 6th,2021.
 If you have any question, please contact fjq19@mails.tsinghua.edu.cn.
 
 Files in 'GUI_tkinter/data/' can be downloaded from [OneDrive](https://1drv.ms/u/s!AvnYgnfmD_ORg0wMuDxHBfkMdYjL?e=Bn9XzH).
+
+The graphical user interface can be opened by the command 'python GUI.py'.
