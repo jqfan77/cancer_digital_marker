@@ -125,7 +125,7 @@ def get_knn_cv_predict_results(X, Y, C_neighbor_k, C_cv_fold, flag_display=False
     if flag_display:
         print('len_X',len(X),'C_neighbor_k',C_neighbor_k,'Accuracy=', acc_score, ';AUC=', auc_score)
     
-    return y_pred, acc_score, mse_score
+    return y_pred, auc_score, mse_score
 
 ###################################################################################
 
@@ -184,7 +184,7 @@ def get_knn_para_by_bruteforce_TCGA(X_idx_raw, X_raw, Y_raw, Y_drug_idx, C_cv_fo
                 best_C_neighbor_k = C_neighbor_k
             
         
-        print('C_selected_para_cnt=%d, best_C_neighbor_k=%d, Accuracy=%f'%(C_selected_para_cnt,best_C_neighbor_k, best_mean_auc_score))
+        print('C_selected_para_cnt=%d, best_C_neighbor_k=%d, AUC=%f'%(C_selected_para_cnt,best_C_neighbor_k, best_mean_auc_score))
 
         # record the best parameters
         best_mean_auc_score_list.append(best_mean_auc_score)
@@ -194,7 +194,7 @@ def get_knn_para_by_bruteforce_TCGA(X_idx_raw, X_raw, Y_raw, Y_drug_idx, C_cv_fo
             best_best_C_neighbor_k = best_C_neighbor_k
             best_C_selected_para_cnt = C_selected_para_cnt
     
-    print('[best] C_selected_para_cnt=%d, best_C_neighbor_k=%d, Accuracy=%f'%(best_C_selected_para_cnt, best_best_C_neighbor_k, best_best_mean_auc_score))
+    print('[best] C_selected_para_cnt=%d, best_C_neighbor_k=%d, AUC=%f'%(best_C_selected_para_cnt, best_best_C_neighbor_k, best_best_mean_auc_score))
     
     
     # Suboptimal decision
@@ -205,7 +205,7 @@ def get_knn_para_by_bruteforce_TCGA(X_idx_raw, X_raw, Y_raw, Y_drug_idx, C_cv_fo
                 best_best_C_neighbor_k = best_C_neighbor_k_list[i]
                 best_best_mean_auc_score = best_mean_auc_score_list[i]
                 break
-        print('[second best] C_selected_para_cnt=%d, best_C_neighbor_k=%d, Accuracy=%f'%(best_C_selected_para_cnt, best_best_C_neighbor_k, best_best_mean_auc_score))
+        print('[second best] C_selected_para_cnt=%d, best_C_neighbor_k=%d, AUC=%f'%(best_C_selected_para_cnt, best_best_C_neighbor_k, best_best_mean_auc_score))
 
     return best_C_selected_para_cnt, best_best_C_neighbor_k
 
