@@ -1,6 +1,0 @@
-TCGA-COAD   Colon Adenocarcinoma  结肠原发腺癌       code:0
-TCGA-READ    Rectum Adenocarcinoma  直肠腺癌           code:4
-TCGA-STAD    Stomach Adenocarcinoma  胃腺癌            code:1
-TCGA-ESCA    Esophageal Carcinoma   食管癌                 code:2
-TCGA-LUAD    Lung Adenocarcinoma   肺腺癌                 code:3
-TCGA-BRCA    Breast Invasive Carcinoma 乳腺浸润性癌    code:5
