@@ -1,4 +1,4 @@
-# cancer_digital_marker
+# Cancer_digital_marker
 The codes of 'Multiplex gene quantification as digital markers for extremely rapid evaluation of chemodrug sensitivity'.
 
 Updated on August 23th, 2021.
